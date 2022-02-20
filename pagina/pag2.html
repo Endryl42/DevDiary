@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
+    <title>Links e Downloads</title>
+</head>
+<body>
+    <h1>Links e Downloads</h1>
+    <p>Para criar o link usamos a <strong>tag A</strong>. O <em>href</em> cria uma referência hipertext:</p>
+
+    <pre>
+        <code>
+    &lt;a hrel=“<ins>https://github.com/Endryl42</ins>”&gt;Acesse meu perfil GitHub&lt;/a&gt;
+    &lt;a hrel=“pag2.html”&gt;próxima página&lt;/a&gt;
+        </code>
+    </pre>
+            
+    <p><em>note que dentro do atributo <strong>href</strong>, o que colocamos foi uma <strong>URL</strong> completa para outro site</em></p>
+
+    <dl><p>Hreflang</p></dl>
+    <dd><p>permite indicar qual é o idioma principal do site para onde o link está desviando o fluxo de navegação. E vai permitir avisar ao navegador e softwares de tradução como lidar caso o visitante opte pro traduzir automaticamente os conteúdos.</p></dd>
+
+    <p>Ex:</p>
+    
+    <pre>
+        <code>
+    &lt;a href=”https://www.w3schools.com/html/” <mark>hreflang=”en”</mark>&gt;Site da W3Schools {Em inglês}&lt;/a&gt;
+        </code>
+    </pre>
+
+    <p>Existe alguns comportamentos ao clicar no link, como ir para outra página e fechar a anterior para poder controlar onde o site de destino vai abrir, podemos usar o atributo <em>target</em>, que suporta os seguintes valores:</p>
+    <ul>
+        <li><a href="../target/blank.html" target="_blank">_blank</a> – vai abrir o link em nova janela em branco.</li>
+        <li><a href="../target/self.html" target="_self">_self</a> – vai abrir o link na janela ou frame atual (padrão). <em>obs:usar ../ para voltar um diretorio</em></li>
+        <li><a href="../target/top.html" target="_top">_top</a> – vai desfazer todos os frames e abrir o destino no navegador completo.</li>
+        <li><a href="../target/parent.html" target="_parent">_parent</a> – similar ao uso do _top em uma referência à janela a abrir</li>
+        <li><a href="../target/nome-do-frame.html" target="nome-do-frame.html">nome-do-frame</a> – caso esteja usando frames, indincar o nome da janela a abrir</li>
+    </ul>
+
+    <p>Ex:</p>
+
+    <pre>
+        <code>
+    &lt;a hrel=“https://github.com/Endryl42” <mark>target=”_blank”</mark> &gt;Acesse meu perfil GitHub&lt;/a&gt;
+    &lt;a hrel=“pag2.html” <mark>target=”_self”</mark> &gt;próxima página&lt;/a&gt;
+        </code>
+    </pre>
+
+    <p>Existe também um recurso bem interessante para link que é indicar qual é a natureza do destino usando o atribute <em>rel</em>:</p>
+
+    <ul>
+        <li>next - indica que o link é para a próxima parte do documento atual.</li>
+        <li>prev - indica que o link é para a parte anterior do documento atual.</li>
+        <li>author - indica que é um link para o site do autor do artigo atual.</li>
+        <li>external - indica que é um link para outro site que não faz parte do site atual.</li>
+        <li>Nofollow - indica que pe um link para um site não endossado, como um link pago.</li>
+    </ul>
+
+    <p>Ex:</p>
+
+    <pre>
+        <code>
+    &lt;a hrel=“https://github.com/Endryl42” target=”_blank”  rel=”external” &gt;Acesse meu perfil GitHub&lt;/a&gt;
+
+    &lt;a hrel=“pag2.html” target=”_self” rel=”next” &gt;próxima página&lt;/a&gt;
+        </code>
+    </pre>
+    
+
+    <h2>É para fazer o downloads?</h2>
+
+    <p>Para fazer um download basta apontar o link para o arquivo que é para baixar e adicionar o atributo <em>download</em> com o valor configurado para o nome do arquivo e o atributo <em>type</em> para indicar ao navegador o tipo de arquivo está sendo baixado. </p>
+    <p>Ex:</p>
+
+    <pre>
+        <code>
+    &lt;a href=”arquivos/Arquivo.pdf” download=”Arquivo.pdf” type=”applocation/pdf” &gt;Baixar Arquivo &lt;/a&gt;
+        </code>
+    </pre>
+
+    <p>Aqui vão alguns <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="author">media types</a> bem usados no nosso dia a dia:</p>
+
+    <pre>
+        application/zip     video/mp4       audio/mpeg
+        text/html           video/h264      font/ttf
+        text/css            video/jpeg      image/jpeg
+        text/javascript     audio/aac       image/png
+    </pre>
+<a href="../index.html">Voltar</a>
+</body>
+</html>
+
+

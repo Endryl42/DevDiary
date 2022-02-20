@@ -1,0 +1,36 @@
+
+body{
+    max-width: 500px;
+    margin-left: 500px;
+    margin-bottom: 100px;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.center{
+    text-align: center;
+}
+
+ul{
+    margin-left: px;
+    
+}
+
+.semantica{
+    text-align: center;
+}
+
+.cabeçario{
+    text-align: center;
+    text-justify: auto;
+}
+
+a{
+    color: rgb(154, 199, 250);
+}
+
+.next{
+    color: rgb(65, 115, 253);
+    margin-left: 500px;
+}
